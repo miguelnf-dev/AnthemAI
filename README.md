@@ -3,7 +3,7 @@
 
 Inspired by this article about [€15k spent on a Portuguese bank anthem](https://executivedigest.sapo.pt/centeno-tera-gasto-15-mil-euros-num-hino-a-glorificar-o-seu-mandato-no-banco-de-portugal/)  , AnthemAI uses a multi-agent system to research any topic, write lyrics in European Portuguese, and generate professional songs for free.
 
-[Streamlit app](media\ui.png)
+[Streamlit app](media/ui.png)
 
 ## 🎼 Heres an example of saved money
 
