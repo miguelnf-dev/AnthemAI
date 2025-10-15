@@ -89,9 +89,6 @@ O Banco é a força da nossa nação!
 
 ## 🚀 Installation
 
-### Prerequisites
-
-
 ### Setup
 
 1. **Clone the repository**
@@ -129,7 +126,7 @@ This is all free!!!
 
 You can see the agents in action in the terminal. 
 
-### Alternative: Local Development with uv
+Alternative: **Using uv**
 
 ```bash
 # Install dependencies
