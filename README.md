@@ -96,7 +96,7 @@ O Banco é a força da nossa nação!
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/miguelnf-dev/AnthemAI.git
    cd AnthemAI
    ```
 
@@ -118,6 +118,8 @@ O Banco é a força da nossa nação!
 
 - To generate songs, get your Suno API key from [https://sunoapi.org/pt](https://sunoapi.org/pt) — they offer 50 free credits (≈ 8 songs) to get started.
 - Get your Serper API key from [https://serper.dev/dashboard](https://serper.dev/dashboard)
+
+This is all free!!!
 
 3. **Run with Docker Compose**
    ```bash
