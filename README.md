@@ -7,7 +7,7 @@ Inspired by this article about [€15k spent on a Portuguese bank anthem](https:
 
 Here's what AnthemAI created about the Banco de Portugal:
 
-🎧 [Listen to the Banco de Portugal Anthem](media\BDP.mp3)
+🎧 [Listen to the Banco de Portugal Anthem](media/BDP.mp3)
 
 
 ### Lyrics
