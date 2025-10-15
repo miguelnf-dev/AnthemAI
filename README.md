@@ -1,0 +1,146 @@
+# 🎵 AnthemAI
+## The €15,000 You Didn't Spend
+
+Inspired by this article about [€15k spent on a Portuguese bank anthem](https://executivedigest.sapo.pt/centeno-tera-gasto-15-mil-euros-num-hino-a-glorificar-o-seu-mandato-no-banco-de-portugal/)  , AnthemAI uses AI agents to research any topic, write lyrics in European Portuguese, and generate professional songs for free.
+
+## 🎼 Heres an example of saved money
+
+Here's what AnthemAI created about the Banco de Portugal:
+
+🎧 [Listen to the Banco de Portugal Anthem](media\BDP.mp3)
+
+
+### Lyrics
+
+```
+**Hino do Banco de Portugal**
+
+*(Verso 1)*
+Nas margens do Tejo, em 1846,
+Nasceu o guardião da nação em flor.
+Com orgulho e firmeza, o escudo ergueu,
+Pelas crises e glórias, o povo guiou.
+De Maria II ao euro reluzente,
+Com reservas de ouro e moedas de prata,
+O Banco de Portugal, eterno e constante,
+Protege o futuro com lei e com prata.
+
+*(Coro)*
+Ó Banco de Portugal, pilar da estabilidade!
+No Eurosistema, voz de Portugal!
+Inflação domada, finanças seguras,
+Pagamentos rápidos, economia pura!
+Mário Centeno ao leme, com visão clara,
+Estabilidade euro, nossa bandeira!
+Do Porto a Faro, em cada coração,
+O Banco é a força da nossa nação!
+
+*(Verso 2)*
+Pelas tormentas da Grande Depressão,
+Da Revolução aos bailouts duros,
+Supervisiona bancos, previne o caos,
+Com comitês sábios e leis que nos guardam.
+Reserva estrangeira, trinta e cinco mil milhões,
+Stress tests verdes contra o clima em fúria,
+Educação financeira, inclusão para todos,
+No digital euro, o amanhã constrói.
+
+*(Coro)*
+Ó Banco de Portugal, pilar da estabilidade!
+No Eurosistema, voz de Portugal!
+Inflação domada, finanças seguras,
+Pagamentos rápidos, economia pura!
+Mário Centeno ao leme, com visão clara,
+Estabilidade euro, nossa bandeira!
+Do Porto a Faro, em cada coração,
+O Banco é a força da nossa nação!
+
+*(Ponte)*
+Das crises de 2008 ao renascer pós-pandemia,
+Com TLTROs e MROs, o fluxo não para.
+Contra lavagem de dinheiro, vigilante e forte,
+Na sustentabilidade, o verde avança.
+Independente e livre, sem laços ao Estado,
+Representa-nos no BCE com honra e verdade.
+
+*(Verso Final)*
+Hoje em 2024, com crescimento de 1.8,
+Turismo e exportações, o PIB a subir.
+Desemprego baixo, dívida controlada,
+O Banco vela, com relatório anual.
+De Lisboa ao mundo, em conferências globais,
+O legado perdura, imortal e leal.
+
+*(Coro Final - Repetido com intensidade)*
+Ó Banco de Portugal, pilar da estabilidade!
+No Eurosistema, voz de Portugal!
+Inflação domada, finanças seguras,
+Pagamentos rápidos, economia pura!
+Mário Centeno ao leme, com visão clara,
+Estabilidade euro, nossa bandeira!
+Do Porto a Faro, em cada coração,
+O Banco é a força da nossa nação!
+*(Fade out: Estabilidade... Portugal... Força!)*
+```
+
+## 🚀 Installation
+
+### Prerequisites
+
+
+### Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd AnthemAI
+   ```
+
+2. **Create .env file**
+```properties
+   # LLM Configuration (use any OpenAI-compatible API)
+   LLM_API_KEY=your_api_key_here
+   LLM_MODEL=your_model_name_here
+   LLM_BASE_URL=your_api_base_url_here
+
+   # Other API Keys
+   SERPER_API_KEY=your_serper_key_here
+   SUNO_API_KEY=your_suno_api_key_here
+```
+
+💡 **Note:**
+
+- You can obtain your OpenRouter API key from [https://openrouter.ai/](https://openrouter.ai/). Im using grok-4-fast but there are free models available to use. [Groq](https://console.groq.com/keys) free tier is very generous as well ( but got rate limitings in the websearches a lot..)
+
+- To generate songs, get your Suno API key from [https://sunoapi.org/pt](https://sunoapi.org/pt) — they offer 50 free credits (≈ 8 songs) to get started.
+- Get your Serper API key from [https://serper.dev/dashboard](https://serper.dev/dashboard)
+
+3. **Run with Docker Compose**
+   ```bash
+   docker-compose up --build
+   ```
+   The app will be available at http://localhost:8501
+
+You can see the agents in action in the terminal. 
+
+### Alternative: Local Development with uv
+
+```bash
+# Install dependencies
+uv sync
+
+# Run the app
+uv run streamlit run app.py
+```
+
+## 🎯 How It Works
+
+1. **Research Agent** → Googles your topic using SerperDev
+2. **Lyrics Agent** → Writes anthem lyrics in European Portuguese adapted to your chosen genre
+3. **Song Generator Agent** → Creates professional songs via Suno AI
+
+All for €0.00 instead of €15,000! 🎉
+
+## 📝 License
+
+This project is a satirical commentary on public spending. No Portuguese bank budgets were harmed in the making of this app.

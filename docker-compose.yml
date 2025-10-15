@@ -1,0 +1,10 @@
+services:
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
